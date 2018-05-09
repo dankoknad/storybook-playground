@@ -41,7 +41,7 @@ storiesOf('Button and text', module)
   .add('as dynamic variables', () => {
     const name = text('Name', 'Arunoda Susiripala');
     const age = number('Age', 89);
-    const style = {color: 'white', fontSize: 24}
+    const style = {color: 'white', fontSize: 24} 
   
     const content = `I am ${name} and I'm ${age} years old.`;
     return (<div style={style}>{content}</div>);
