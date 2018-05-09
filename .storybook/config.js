@@ -8,7 +8,7 @@ setDefaults({
 
 function loadStories() {
   // You can require as many stories as you need.
-  require('../stories/bootstrap.js');
+  require('../stories/reactstrap.js');
   require('../stories/index.js');
   require('../stories/video.js');
   require('../stories/app.js');

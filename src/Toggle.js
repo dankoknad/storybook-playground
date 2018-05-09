@@ -17,7 +17,7 @@ class Toggle extends Component {
 
   render() {
     return (
-      <div style={{ paddingTop: 50, textAlign: 'center' }}>
+      <div>
         <Button onClick={this.handleClick} color={this.state.color}>Click me</Button>
       </div>
     );

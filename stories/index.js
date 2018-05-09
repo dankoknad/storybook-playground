@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { action, configureActions } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react';
+import centered from '@storybook/addon-centered';
 
 import MyButton from '../src/MyButton';
 
@@ -21,14 +22,14 @@ action('button-click', {
 })
 
 storiesOf('Button and text', module)
+  .addDecorator(centered)  
   .addDecorator(withKnobs)                                                                             
   .add('with a button', () => (
     <button
       className='btn btn-info'
       disabled={boolean('Disabled', false)}
-      style={{position: 'relative', top: 50, left: 50}}
     >
-      {text('Label', 'Hello Button 01')}
+      {text('Label', 'My Precious Button')}
     </button>
   ))
   .add('as dynamic variables', () => {
