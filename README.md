@@ -1,3 +1,15 @@
+## This project is my playground for React Storybook
+
+Demo: [Link](https://dankoknad.github.io/storybook-test/storybook-build) 
+
+Stories:
+- Reactstrap
+- Button and text
+- Video
+- CRA - initiall view
+
+---------
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
