@@ -4,6 +4,7 @@ import { withInfo } from '@storybook/addon-info';
 import { action, configureActions } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react';
 import centered from '@storybook/addon-centered';
+import { withNotes } from '@storybook/addon-notes';
 
 import MyButton from '../src/MyButton';
 

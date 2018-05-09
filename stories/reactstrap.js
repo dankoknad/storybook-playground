@@ -4,8 +4,10 @@ import { withInfo } from '@storybook/addon-info';
 import { action, configureActions } from '@storybook/addon-actions';
 import { withKnobs, text, number, object } from '@storybook/addon-knobs/react';
 import centered from '@storybook/addon-centered';
+import { withNotes } from '@storybook/addon-notes';
 
 import Toggle from '../src/Toggle';
+import { note } from '../src/note'
 
 import { 
   Col,
@@ -18,8 +20,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 storiesOf('Reactstrap', module)
 .addDecorator(centered)
 .addDecorator(withKnobs)
-.add('with a Toggle', () => (
-  <Toggle />
+.add('with a Toggle', 
+  withNotes(note)(() => 
+    <Toggle />
 ))
 .add('reactstrap buttons',
   withInfo()(() => {
