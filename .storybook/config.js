@@ -1,6 +1,5 @@
 import { configure } from '@storybook/react';
-import {setDefaults} from '@storybook/addon-info';
-import { withNotes } from '@storybook/addon-notes';
+import { setDefaults } from '@storybook/addon-info';
 
 //addon info
 setDefaults({

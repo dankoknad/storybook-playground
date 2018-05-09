@@ -5,6 +5,7 @@ import { action, configureActions } from '@storybook/addon-actions';
 import { withKnobs, text, boolean, number } from '@storybook/addon-knobs/react';
 import centered from '@storybook/addon-centered';
 import { withNotes } from '@storybook/addon-notes';
+import styles from "@sambego/storybook-styles";
 
 import MyButton from '../src/MyButton';
 
@@ -24,7 +25,11 @@ action('button-click', {
 
 storiesOf('Button and text', module)
   .addDecorator(centered)  
-  .addDecorator(withKnobs)                                                                             
+  .addDecorator(withKnobs)
+  .addDecorator(styles({
+    backgroundColor: '#639',
+    height: '630px',
+  }))
   .add('with a button', () => (
     <button
       className='btn btn-info'
@@ -36,9 +41,10 @@ storiesOf('Button and text', module)
   .add('as dynamic variables', () => {
     const name = text('Name', 'Arunoda Susiripala');
     const age = number('Age', 89);
+    const style = {color: 'white', fontSize: 24}
   
     const content = `I am ${name} and I'm ${age} years old.`;
-    return (<div>{content}</div>);
+    return (<div style={style}>{content}</div>);
   })
   .add('with text', () => (
     <MyButton onClick={ action('button-click') }>Hello Button</MyButton>
