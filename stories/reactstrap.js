@@ -38,7 +38,10 @@ storiesOf('Reactstrap', module)
     return (
       <Col>
         <Button { ...props } >with editable props</Button>
-        <br/><br/>
+        <p/>
+        <div class="alert alert-light" role="alert">
+          <em>(Checkout KNOBS tab)</em>
+        </div>
         <Button color="primary">primary</Button>{' '}
         <Button color="secondary">secondary</Button>{' '}
         <Button color="success">success</Button>{' '}
