@@ -1,6 +1,6 @@
 ## This project is my playground for React Storybook
 
-Demo: [Link](https://dankoknad.github.io/storybook-test/storybook-build) 
+Demo: [Link](https://dankoknad.github.io/storybook-playground/storybook-build) 
 
 Stories:
 - Reactstrap
